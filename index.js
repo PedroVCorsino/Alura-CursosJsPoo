@@ -1,31 +1,5 @@
-class Cliente {
-    nome;
-    cpf;
-}
-
-class ContaCorrente{
-    agencia;
-    #saldo = 0; // O "#" torna esse atributo privado. 
-
-    sacar(valor) { 
-        if(this.#saldo < valor) return; 
-        
-        this.#saldo -=valor;
-        return valor;
-    }
-
-    depositar(valor) {
-        if (valor <= 0) return
-        
-        this.#saldo +=valor;
-        return valor;
-
-    }
-
-    getSaldo(){
-        return this.#saldo;
-    }
-}
+import { Cliente } from "./cliente.js";
+import { ContaCorrente } from "./contaCorrente.js";
 
 const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
