@@ -1,9 +1,26 @@
+import { Cliente } from "./cliente.js";
+
 export class ContaCorrente{
+    //Publicos
     agencia;
-    cliente;
+
+    //Privados
+    #cliente;
+    set cliente(novoValor){
+        if(novoValor instanceof Cliente){
+            this.#cliente = novoValor
+        }
+    }
+    get cliente(){
+        return this.#cliente
+    }
 
     #saldo = 0; // O "#" torna esse atributo privado. 
+    get saldo(){
+        return this.#saldo;
+    }
 
+    //Metodos
     sacar(valor) { 
         if(this.#saldo < valor) return; 
         
@@ -24,7 +41,5 @@ export class ContaCorrente{
         conta.depositar(valorSacado);
     }
 
-    getSaldo(){
-        return this.#saldo;
-    }
+
 }

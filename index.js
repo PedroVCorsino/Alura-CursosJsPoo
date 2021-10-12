@@ -22,5 +22,5 @@ contaCorrenteAlice.agencia = 1002;
 contaCorrenteRicardo.depositar(500);
 contaCorrenteRicardo.trasferir(200, contaCorrenteAlice);
 
-console.log(`${contaCorrenteRicardo.cliente.nome} --> ${contaCorrenteRicardo.getSaldo()}`)
-console.log(`${contaCorrenteAlice.cliente.nome} --> ${contaCorrenteAlice.getSaldo()}`)
+console.log(`${contaCorrenteRicardo.cliente.nome} --> ${contaCorrenteRicardo.saldo}`)
+//console.log(`${contaCorrenteAlice.cliente.nome} --> ${contaCorrenteAlice.getSaldo()}`)
