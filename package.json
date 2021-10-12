@@ -1,0 +1,23 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto bytebank para seus clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroVCorsino/Alura-CursosJsPoo.git"
+  },
+  "keywords": [
+    "POO"
+  ],
+  "author": "Pedro",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/PedroVCorsino/Alura-CursosJsPoo/issues"
+  },
+  "homepage": "https://github.com/PedroVCorsino/Alura-CursosJsPoo#readme"
+}
