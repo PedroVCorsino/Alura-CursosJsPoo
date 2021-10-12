@@ -1,5 +1,7 @@
 export class ContaCorrente{
     agencia;
+    cliente;
+
     #saldo = 0; // O "#" torna esse atributo privado. 
 
     sacar(valor) { 
@@ -15,6 +17,11 @@ export class ContaCorrente{
         this.#saldo +=valor;
         return valor;
 
+    }
+
+    trasferir(valor, conta){
+        const valorSacado = this.sacar(valor);
+        conta.depositar(valorSacado);
     }
 
     getSaldo(){
