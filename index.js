@@ -1,7 +1,7 @@
 import { Cliente } from "./cliente.js";
-import { Conta } from "./conta.js";
 import { ContaCorrente } from "./contaCorrente.js";
 import { ContaPoupanca } from "./contaPoupanca.js";
+import { ContaSalario } from "./contaSalario.js";
 
 const cliente1 = new Cliente("Ricardo",11122233301);
 
@@ -12,7 +12,6 @@ contaCorrenteRicardo.sacar(200);
 const contaPoupanca = new ContaPoupanca(50, cliente1, 1001)
 
 
-//console.log(`${contaCorrenteRicardo.cliente.nome} --> ${contaCorrenteRicardo.saldo}`)
+const teste = new ContaSalario(0, cliente1, 1003);
 
-console.log(contaCorrenteRicardo)
-console.log(contaPoupanca)
+teste.sacar(50);
