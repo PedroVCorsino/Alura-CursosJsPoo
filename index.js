@@ -1,20 +1,18 @@
 import { Cliente } from "./cliente.js";
+import { Conta } from "./conta.js";
 import { ContaCorrente } from "./contaCorrente.js";
+import { ContaPoupanca } from "./contaPoupanca.js";
 
 const cliente1 = new Cliente("Ricardo",11122233301);
 
 const contaCorrenteRicardo = new ContaCorrente(cliente1, 1001);
-
-const cliente2 = new Cliente("Alice", 11122233302);
-
-const contaCorrenteAlice = new ContaCorrente(cliente2, 1002);
-
-
-
 contaCorrenteRicardo.depositar(500);
-contaCorrenteRicardo.trasferir(200, contaCorrenteAlice);
+contaCorrenteRicardo.sacar(200);
 
-console.log(`${contaCorrenteRicardo.cliente.nome} --> ${contaCorrenteRicardo.saldo}`)
-console.log(`${contaCorrenteAlice.cliente.nome} --> ${contaCorrenteAlice.saldo}`)
+const contaPoupanca = new ContaPoupanca(50, cliente1, 1001)
 
-console.log(ContaCorrente.numeroDeContas)
+
+//console.log(`${contaCorrenteRicardo.cliente.nome} --> ${contaCorrenteRicardo.saldo}`)
+
+console.log(contaCorrenteRicardo)
+console.log(contaPoupanca)
