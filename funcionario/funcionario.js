@@ -1,4 +1,4 @@
-// Classe abstrata
+// Abstract class
 export class Funcionario{
     constructor(nome, salario, cpf){
         if(this.constructor == Funcionario) {
@@ -9,6 +9,16 @@ export class Funcionario{
         this._cpf = cpf;
 
         this._bonificacao = 1;
+        this._senha;
+    }
 
+    // getters and setters
+    get senha(){
+        return this._senha
+    }
+
+    //method
+    cadastrarSenha(senha){
+        this._senha = senha;
     }
 }
