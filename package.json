@@ -11,7 +11,9 @@
     "url": "git+https://github.com/PedroVCorsino/Alura-CursosJsPoo.git"
   },
   "keywords": [
-    "POO"
+    "POO",
+    "Alura",
+    "javascript"
   ],
   "author": "Pedro",
   "license": "ISC",
